@@ -53,7 +53,7 @@ python3 hunter.py -d example.com -o results.txt
 Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
 ## Author
-👨‍💻 **Created by:** Virendra Kumar (DigitalProfessor)
+👨‍💻 **Created by:** Virendra Kumar (Professor)
 
 ## License
 This project is licensed under the MIT License.

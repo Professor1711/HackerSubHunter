@@ -26,7 +26,7 @@ chmod +x install.sh
 ## Usage
 Run the tool with the following command:
 ```bash
-python3 hacker_subhunter.py -d example.com
+python3 hunter.py -d example.com
 ```
 
 ## System Requirements

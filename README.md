@@ -1,91 +1,69 @@
-# HackerSubHunter
+# HackerSubHunter - Automated Subdomain Enumeration Tool
 
-HackerSubHunter is an advanced automated subdomain enumeration tool that integrates multiple reconnaissance tools to extract the maximum number of subdomains.
+## Overview
+HackerSubHunter is an automated subdomain enumeration tool that combines multiple reconnaissance tools to provide comprehensive results. It integrates tools like `subfinder`, `amass`, `assetfinder`, `gobuster`, `knockpy`, and more.
 
----
+## Features
+- Uses **10+ reconnaissance tools** to maximize subdomain enumeration results.
+- **Automated installation** of dependencies.
+- **Structured output** to save results efficiently.
+- **Colorful banner** for a professional look.
 
-## 🔥 Features
-- **Combination of multiple enumeration tools**
-- **Automated installation** of dependencies
-- **Structured result saving**
-- **Colorful banner** display
-
----
-
-## 🚀 Tools Used (Combination)
-HackerSubHunter utilizes a combination of multiple tools to ensure the best results:
-
-- **subfinder** - Passive subdomain enumeration
-- **assetfinder** - Asset discovery
-- **amass** - Passive & active reconnaissance
-- **jq** - JSON parsing for data extraction
-- **curl** - Data fetching from APIs
-- **censys** - Subdomain extraction from Censys
-- **securitytrails** - Subdomain lookup from SecurityTrails
-- **massdns** - DNS brute force attack
-- **gobuster** - DNS brute forcing
-- **knockpy** - DNS enumeration
-- **dnsrecon** - DNS record enumeration
-
----
-
-## 🛠 Installation
-
-1️⃣ **Clone Repository:**
+## Installation
+### **Step 1: Clone the Repository**
 ```bash
- git clone https://github.com/Professor1711/HackerSubHunter.git 
- cd HackerSubHunter
+git clone https://github.com/Professor1711/HackerSubHunter.git
+cd HackerSubHunter
 ```
 
-2️⃣ **Install Requirements:**
+### **Step 2: Install Dependencies Automatically**
+Run the `install.sh` script to install all required system tools and Python dependencies.
 ```bash
- pip install -r requirements.txt
+chmod +x install.sh
+./install.sh
 ```
 
-3️⃣ **Run the Tool:**
+## Usage
+Run the tool with the following command:
 ```bash
- python3 hacker_subhunter.py -d target.com
+python3 hacker_subhunter.py -d example.com
 ```
 
----
+## System Requirements
+- **Operating System:** Linux (Ubuntu/Kali recommended) or macOS
+- **Python Version:** 3.7+
+- **Required Tools:**
+  - subfinder
+  - assetfinder
+  - amass
+  - jq
+  - curl
+  - censys
+  - securitytrails
+  - massdns
+  - gobuster
+  - knockpy
+  - dnsrecon
 
-## 🖥 Example Output
-
+## Output Example
 ```
-███████████████████████████
-████  PROFESSOR  ██████████
-███████████████████████████
-
-PROFESSOR
+█████████████████████████
+█ PROFESSOR █
+█████████████████████████
 Made by Virendra Kumar
 
-[+] Installing required tools...
-[+] Checking and installing: subfinder
-[+] Checking and installing: assetfinder
-[+] Checking and installing: amass
-[+] Checking and installing: jq
-[+] Checking and installing: curl
-[+] Checking and installing: censys
-[+] Checking and installing: securitytrails
-[+] Checking and installing: massdns
-[+] Checking and installing: gobuster
-[+] Checking and installing: knockpy
-[+] Checking and installing: dnsrecon
-[+] All dependencies installed successfully!
-
-[+] Enumerating subdomains for: target.com
+[+] Enumerating subdomains for: example.com
 [+] Running Subfinder...
 [+] Running Assetfinder...
-[+] Running Amass Passive...
-[+] Running Censys...
-[+] Running SecurityTrails...
-[+] Running Gobuster...
-[+] Running DNSRecon...
-
-[+] Found 250 subdomains. Results saved in results/target.com_20250311/subdomains.txt
+[+] Running Amass...
+...
+[+] Found 250 subdomains. Results saved in results/example.com_20250311/subdomains.txt
 ```
 
----
+## Contributing
+Feel free to contribute to this project by submitting issues or pull requests.
+
+
 
 ## 🔥 Author
 - **Virendra Kumar**

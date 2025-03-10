@@ -37,6 +37,7 @@ To specify an output file:
 ```bash
 python3 hunter.py -d example.com -o results.txt
 ```
+![Digital Defence - VMware Workstation 3_11_2025 2_04_09 AM](https://github.com/user-attachments/assets/b9f28a93-b162-4315-a48f-7e496c8ef324)
 
 ## Example Output
 ```

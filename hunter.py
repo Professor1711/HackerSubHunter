@@ -71,11 +71,16 @@ def subdomain_enum(domain, output_file):
     return final_output
 
 if __name__ == "__main__":
-    print_banner()
-    install_dependencies()
     parser = argparse.ArgumentParser(description="Automated Subdomain Enumeration Tool")
-    parser.add_argument("-d", "--domain", required=True, help="Target domain for subdomain enumeration")
+    parser.add_argument("-d", "--domain", required=False, help="Target domain for subdomain enumeration")
     parser.add_argument("-o", "--output", default="subdomains.txt", help="Output file name (default: subdomains.txt)")
     
     args = parser.parse_args()
-    subdomain_enum(args.domain, args.output)
+
+    if args.domain:  # Only install dependencies if domain is provided
+        print_banner()
+        install_dependencies()
+        subdomain_enum(args.domain, args.output)
+    else:
+        parser.print_help()
+
